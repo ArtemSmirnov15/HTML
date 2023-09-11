@@ -1,17 +1,19 @@
 
 function app() {
+
+    // имя пользователя
+   let name_user = parseString(document.getElementById('name_user').value) 
+
+
     //ввод данных
     //let x = parseInt(prompt("Введите х"))
-    let x = parseInt(document.getElementById('x').value)
+    let message = parseString(document.getElementById('x').value)
     
-    if (x === 0) {
-        document.getElementById('message').innerText = "х = 0"
-    } 
-
     //логика
-    const result = x * x  
+    const result = message  
     
     //вывод данных
-   // alert(`Квадрат х = ${result}`)
+   alert(`Квадрат х = ${result}`)
    document.getElementById('result').innerText = result
+
 }
